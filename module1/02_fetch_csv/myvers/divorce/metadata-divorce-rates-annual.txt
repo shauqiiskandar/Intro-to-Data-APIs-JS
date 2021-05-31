@@ -1,0 +1,207 @@
+# Metadata for Divorce Rates, Annual
+---
+Identifier: '3e67afea-b899-4bcd-b400-29134e3bdcfa'
+Name: 'divorce-rates-annual'
+Title: 'Divorce Rates, Annual'
+Description:
+  - 'Data on divorce rates include annulments.'
+  - ''
+  - 'Divorces comprise civil divorces under the Women''s Charter and Muslim divorces
+    under the Administration of Muslim Law Act. Separations that do not confer on
+    the parties the right to re-marry are not covered.'
+  - ''
+  - 'Annulments granted under the Women''s Charter refer to the invalidation of marriages.
+    Parties whose marriages have been annulled are conferred the status of never having
+    been married to each other.'
+Topics:
+  - 'Society'
+Keywords:
+  - 'ASDR'
+  - 'Age-Specific Divorce Rate'
+  - 'CDR'
+  - 'Crude Divorce Rate'
+  - 'GDR'
+  - 'General Divorce Rate'
+Publisher:
+  Name: 'Ministry of Trade and Industry - Department of Statistics'
+  Admin 1:
+    Name: 'SingStat Info'
+    Department: 'Statistics Information Services'
+    Email: 'info@singstat.gov.sg'
+Sources:
+  - 'Ministry of Trade and Industry - Department of Statistics'
+Source Url: 'http://www.tablebuilder.singstat.gov.sg/publicfacing/createDataTable.action?refId=1700&exportType=csv'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Annual'
+Coverage: '1980-01-01 to 2017-12-31'
+Last Updated: '2019-07-22T19:07:08.941189'
+Resources:
+  -
+    Identifier: 'ffd8bc8d-27a1-4bff-b9a5-449dae04392c'
+    Title: 'Male General Divorce Rate'
+    Url: 'https://storage.data.gov.sg/divorce-rates-annual/resources/male-general-divorce-rate-2019-07-22T19-02-08Z.csv'
+    Format: 'CSV'
+    Coverage: '1980-01-01 to 2017-12-31'
+    Description:
+      - 'General Divorce Rate refers to the number of divorces and annulments granted
+        to married persons aged 20 years and over during the year, out of every thousand
+        married population in the same age group.'
+      - ''
+      - 'For 2004 onwards, data are based on divorces and annulments where the male
+        spouses are residents (i.e. Singapore citizens and permanent residents).'
+    Last Updated: '2019-07-22T19:02:08.123391'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'level_1'
+        Title: 'General Divorce Rate'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'value'
+        Title: 'Death Rate'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Per 1,000 Married Resident Males 20 Years & Over'
+  -
+    Identifier: 'd3f584c4-e89f-4dc1-bfb1-414da6781ba6'
+    Title: 'Female General Divorce Rate'
+    Url: 'https://storage.data.gov.sg/divorce-rates-annual/resources/female-general-divorce-rate-2019-07-22T19-03-35Z.csv'
+    Format: 'CSV'
+    Coverage: '1980-01-01 to 2017-12-31'
+    Description:
+      - 'General Divorce Rate refers to the number of divorces and annulments granted
+        to married persons aged 20 years and over during the year, out of every thousand
+        married population in the same age group.'
+      - ''
+      - 'For 2004 onwards, data are based on divorces and annulments where the female
+        spouses are residents (i.e. Singapore citizens and permanent residents).'
+    Last Updated: '2019-07-22T19:03:35.469580'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'level_1'
+        Title: 'General Divorce Rate'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'value'
+        Title: 'Death Rate'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Per 1,000 Married Resident Females 20 Years & Over'
+  -
+    Identifier: '90fb728d-2444-4a59-aaf2-861956539518'
+    Title: 'Crude Divorce Rate'
+    Url: 'https://storage.data.gov.sg/divorce-rates-annual/resources/crude-divorce-rate-2017-11-16T17-21-56Z.csv'
+    Format: 'CSV'
+    Coverage: '1980-01-01 to 2016-12-31'
+    Description:
+      - 'Crude Divorce Rate refers to the number of divorces and annulments granted
+        in the year per thousand population.'
+      - ''
+      - 'For 2004 onwards, data are based on divorces and annulments where either
+        or both spouses are residents (i.e. Singapore citizens and permanent residents).'
+    Last Updated: '2017-11-16T17:21:56.530915'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'level_1'
+        Title: 'Crude Divorce Rate'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'value'
+        Title: 'Death Rate'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Per 1,000 Residents'
+  -
+    Identifier: '250d3cc9-1651-45ef-8b8a-243ac0097298'
+    Title: 'Male Age-Specific Divorce Rate'
+    Url: 'https://storage.data.gov.sg/divorce-rates-annual/resources/male-age-specific-divorce-rate-2019-07-22T19-05-36Z.csv'
+    Format: 'CSV'
+    Coverage: '1980-01-01 to 2017-12-31'
+    Description:
+      - 'Age-Specific Divorce Rate refers to the number of divorces and annulments
+        granted within a specific age group during the year, out of every thousand
+        married population in the same age group.'
+      - ''
+      - 'For 2004 onwards, data are based on divorces and annulments where the male
+        spouses are residents (i.e. Singapore citizens and permanent residents).'
+    Last Updated: '2019-07-22T19:05:36.520282'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'level_1'
+        Title: 'General Divorce Rate'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'level_2'
+        Title: 'Age Group'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'value'
+        Title: 'Death Rate'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Per 1,000 Married Resident Males 20 Years & Over'
+  -
+    Identifier: '3ae4b4f4-3af3-43a0-8490-66af2087acde'
+    Title: 'Female Age-Specific Divorce Rate'
+    Url: 'https://storage.data.gov.sg/divorce-rates-annual/resources/female-age-specific-divorce-rate-2019-07-22T19-07-04Z.csv'
+    Format: 'CSV'
+    Coverage: '1980-01-01 to 2017-12-31'
+    Description:
+      - 'Age-Specific Divorce Rate refers to the number of divorces and annulments
+        granted within a specific age group during the year, out of every thousand
+        married population in the same age group.'
+      - ''
+      - 'For 2004 onwards, data are based on divorces and annulments where the female
+        spouses are residents (i.e. Singapore citizens and permanent residents).'
+    Last Updated: '2019-07-22T19:07:04.812938'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'level_1'
+        Title: 'General Divorce Rate'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'level_2'
+        Title: 'Age Group'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'value'
+        Title: 'Death Rate'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Per 1,000 Married Resident Females 20 Years & Over'
