@@ -22,6 +22,7 @@ function setup() {
 function getData() {
   loadJSON(api_url, gotData);
 }
+//%loadJSON loads a json file from a file/url and returns an object. 1st argument is the string url to load from. the 2nd is the callback to be executed once loadJSON completes, data is passed in as first argument
 
 function gotData(data) {
   if (firstTime) {

@@ -76,3 +76,5 @@ async function charting() {
   const nChart = new Chart(dchart, config);
 }
 charting();
+
+
