@@ -19,6 +19,7 @@ if ('geolocation' in navigator) {
     //% get the dom elements
     const la = document.getElementById('lat');
     const lo = document.getElementById('long');
+    const ref = document.getElementById('refresh');
 
     //%assign the coords to the elements
     la.textContent = lat;
@@ -46,15 +47,23 @@ if ('geolocation' in navigator) {
 
     //!STEP5C getting a response from the server
     //% using fetch post request and use then for response
-    fetch('/api', config)
-      .then((resp) => resp.json())
-      .then((opt) => console.log(opt));
+    // fetch('/api', config)
+    //   .then((resp) => resp.json())
+    //   .then((opt) => console.log(opt));
 
     //% using await to get a response
     // const resp = await fetch('/api', config);
     // const coord = await resp.json();
     // console.log(coord);
 
+    //%using the fetch post request with an event listener
+    function request() {
+      fetch('/api', config)
+        .then((resp) => resp.json())
+        .then((opt) => console.log(opt));
+
+    }
+    ref.addEventListener('click', request)
   });
 } else {
   console.log('geolocation is not available');
