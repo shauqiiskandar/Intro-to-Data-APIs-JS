@@ -1,6 +1,10 @@
+//! end of tutorial
+const fs = require('fs');
+
 //! STEP1 get express
 //* to have access to the express package that we have gotten using npm, we need to use "require". You can think of it as an import statement. Get the package and put it into a variable
 const express = require('express');
+const { time } = require('console');
 
 //! STEP2 create the app
 //* you want to create a web app by calling the express function. The library is executed and put into a variable
@@ -35,8 +39,17 @@ app.post('/api', function (req, res) {
   res.json({
     status: 'success',
     latitude: coord.lat,
-    longditude: coord.long
+    longitude: coord.long,
+    timestamp: coord.time
   });
+  
+  //! creating file for data storage
+fs.writeFile('mynewfile3.txt', JSON.stringify(coord), function (err) {
+  if (err) throw err;
+  console.log('test');
+});
+
+
 });
 //! see step 5C in index.html(the client)
 

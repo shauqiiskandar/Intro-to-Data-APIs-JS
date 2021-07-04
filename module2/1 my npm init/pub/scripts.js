@@ -7,11 +7,14 @@ if ('geolocation' in navigator) {
     //%to get all the coordinates lat,long,everything
     console.log(position.coords.latitude);
     console.log(position.coords.longitude);
-    console.log(position.coords);
+    console.log(position);
+    console.log(position.timestamp);
 
     //%put the coords into a constant
     const lat = position.coords.latitude;
     const long = position.coords.longitude;
+    //*end of tut 2.3 addition
+    const time = position.timestamp;
 
     //% get the dom elements
     const la = document.getElementById('lat');
@@ -28,7 +31,8 @@ if ('geolocation' in navigator) {
     //% we create an object with the data that we want to send to the server
     const data = {
       lat,
-      long
+      long,
+      time
     };
 
     //%set the fetch config file
