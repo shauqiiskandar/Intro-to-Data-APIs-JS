@@ -1,5 +1,9 @@
 //! end of tutorial
+//%file system
 const fs = require('fs');
+
+//? 2.4 database
+const Datastore = require('nedb');
 
 //! STEP1 get express
 //* to have access to the express package that we have gotten using npm, we need to use "require". You can think of it as an import statement. Get the package and put it into a variable
@@ -32,6 +36,17 @@ app.use(express.json({
   limit: "1mb"
 }))
 
+const data = [];
+
+//%2.4 database 
+const db = new Datastore('database.db');
+db.loadDatabase();
+const dbdata = {
+  name: 'dude',
+  age: 34,
+}
+// db.insert(data);
+
 //! STEP5B preparing for POST requests made to the server(handling requests from the client and sending a response)
 //* Since we are expecting a post request in this case, we use the POST method route . The lines in this block will only be run when you refresh the client. i.e it will run when the client makes a request to the server which in this case is a post request. The first argument is the endpoint(the address that receives the post request).  The 2nd argument is a callback function that looks that the request coming in, and send a response back.
 app.post('/api', function (req, res) {
@@ -44,12 +59,16 @@ app.post('/api', function (req, res) {
     status: 'success',
     latitude: coord.lat,
     longitude: coord.long,
-    timestamp: coord.time
+    timestamp: coord.time,
+    noun: coord.inp
   });
 
+
+  data.push(coord);
+  db.insert(data);
   //! creating file for data storage
   if (fs.existsSync("mynewfile3.txt")) {
-    fs.appendFile('mynewfile3.txt', JSON.stringify(coord), function (err) {
+    fs.appendFile('mynewfile3.txt', JSON.stringify(data), function (err) {
       if (err) throw err;
       console.log('append');
     });
